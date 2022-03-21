@@ -1,19 +1,19 @@
 export const bus = () => {};
 
-doRequest()
+doRequest();
 
 const busWrapper = document.createElement('div');
 
-    const busHeader = document.createElement('h2');
-    busHeader.innerText="BUSTIDER";
-    busWrapper.appendChild(busHeader);
+const busHeader = document.createElement('h2');
+busHeader.innerText="BUSTIDER";
+busWrapper.appendChild(busHeader);
 
-    let busList = document.createElement('section');
-    busWrapper.appendChild(busList);
+let busList = document.createElement('section');
+busWrapper.appendChild(busList);
 
-    //poster det til index.html
-    const post = document.getElementById('bus');
-    post.appendChild(busWrapper);
+//poster det til index.html
+const post = document.getElementById('bus');
+post.appendChild(busWrapper);
 
 async function doRequest(){
     const url = "https://xmlopen.rejseplanen.dk/bin/rest.exe/multiDepartureBoard?id1=851400602&id2=8519734&format=json";
@@ -43,8 +43,6 @@ function build(data) {
             const difference = busArriving - Date.now();
         
             const daysDifference = Math.ceil(difference/1000/60);
-    
-            console.log(daysDifference);
     
             let timeToBus = "";
             

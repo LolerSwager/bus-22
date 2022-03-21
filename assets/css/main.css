@@ -1,0 +1,50 @@
+#bus div {
+  font-family: arial;
+  font-size: 1vmax;
+  background-color: #1B183D;
+  color: #AEAEC8;
+}
+
+#bus div h2 {
+  text-align: center;
+}
+
+#bus div section {
+  padding: 1em 0;
+}
+
+#bus div section article {
+  background-color: #24214F;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 10px;
+  margin: 1em;
+}
+
+#bus div section article p {
+  padding: 1em;
+}
+
+#bus div section article p:last-child {
+  min-width: 5em;
+  text-align: right;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  overflow-y: hidden;
+  /* Hide vertical scrollbar */
+  overflow-x: hidden;
+  /* Hide horizontal scrollbar */
+}
+/*# sourceMappingURL=main.css.map */
